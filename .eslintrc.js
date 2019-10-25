@@ -23,6 +23,10 @@ module.exports = {
     ],
     "rules": {
         "indent": ["error", "tab"],
+        "quotes": [
+            2,
+            "single"
+          ],        
         "max-len": [2, {"code": 160}],
         "no-tabs": ["error", { "allowIndentationTabs": true }],
         "import/extensions": ["error", "never", {"jsx": "always"}],
@@ -36,6 +40,11 @@ module.exports = {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",        
         "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": [
+            "error", {
+                "devDependencies": [ "webpack.*.js" ]
+            }
+        ]        
     },
     "parser": "babel-eslint"
 }
