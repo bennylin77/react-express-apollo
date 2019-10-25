@@ -1,8 +1,8 @@
 require('dotenv').config();
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = merge(common, {
 	mode: 'production',
@@ -12,7 +12,7 @@ module.exports = merge(common, {
 			'process.env': {
 				NODE_ENV: JSON.stringify('production'),
 				HOST: process.env.HOST,
-				PORT: process.env.PORT,	
+				PORT: process.env.PORT,
 				PROTOCOL: process.env.PROTOCOL,
 			},
 		}),

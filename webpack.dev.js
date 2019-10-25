@@ -15,8 +15,8 @@ module.exports = merge({
 			'process.env': {
 				NODE_ENV: JSON.stringify('development'),
 				HOST: process.env.HOST,
-				PORT: process.env.PORT,	
-				PROTOCOL: process.env.PROTOCOL,				
+				PORT: process.env.PORT,
+				PROTOCOL: process.env.PROTOCOL,
 			},
 		}),
 	],
