@@ -22,15 +22,11 @@ module.exports = {
         "react-hooks"
     ],
     "rules": {
-        "indent": ["error", "tab"],
-        "quotes": [
-            2,
-            "single"
-          ],        
+        "indent": ["error", 4],
+        "quotes": ["error", "double"],
         "max-len": [2, {"code": 160}],
         "no-tabs": ["error", { "allowIndentationTabs": true }],
         "import/extensions": ["error", "never", {"jsx": "always"}],
-        "jsx-quotes": ["error", "prefer-single"],
         "operator-linebreak": ["error", "after"],
         "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
         "react/jsx-indent-props": "off",
