@@ -7,7 +7,7 @@ module.exports = merge({
 	mode: 'development',
 	devtool: 'eval',
 	entry: {
-		app: ['webpack-hot-middleware/client'],
+		app: ["webpack-hot-middleware/client"],
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
